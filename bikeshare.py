@@ -21,30 +21,20 @@ def get_filters():
     month= None
     day= None
     while str(city).lower() not in CITY_DATA:
-        try:
-            city=str(input('Which city are you interested in?: '))
-        except:
-            print('That\'s not a valid entry!')
-        finally:
-            print('Searching for {}...'.format(city))
+        city=str(input('Which city are you interested in?: ')).title()
+        if str(city).lower() not in CITY_DATA:
+            print('That\'s not a valid entry! Please enter: New York City, Washington, or Chicago.')
     print(city, 'found! Loading data..')
     while str(month).lower() not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
-        try:
-            month=str(input('Please specify month or enter \'all\' to leave month unspecified:'))
-        except:
-            print('That\'s not a valid entry!')
-        finally:
-            print('Searching for {} data in {}...'.format(month, city))
-    print('Data found!')
+        month=str(input('Please specify month or enter \'all\' to leave month unspecified:')).title()
+        if str(month).lower() not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
+            print('That\'s not a valid entry! Please enter "all" or any month from January to June!')
+    print('Loading {} data in {}...'.format(month, city))
     while str(day).lower() not in ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
-        try:
-            day=str(input('Which day of the week? Enter \'all\' to unspecify:'))
-        except:
-            print('That\'s not a valid entry!')
-        finally:
-            print('Searching for data for {} day(s) of week in {} month(s) in the city of \n {}...'.format(day, month, city))
-
-    print('Data found! Loading...')
+        day=str(input('Which day of the week? Enter \'all\' to unspecify:')).title()
+        if str(day).lower() not in ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
+            print('That\'s not a valid entry! Please enter "all" or any day of the week!')
+    print('Loading data for {} day(s) of week in {} month(s) in the city of \n {}...'.format(day, month, city))
     print('-'*40)
     city=city.lower()
     month=month.title()
