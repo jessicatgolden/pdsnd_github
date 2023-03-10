@@ -8,7 +8,12 @@ Replace the Project Title
 This **Bikeshare** tool allows for users to review statistical time, location, and user data in the cities of: _New _York, _Washington, and _Chicago.
 
 ### Files used
-Include the files used
+Files include:
+* README.md
+* bikeshare.py
+* new_york_city.csv
+* washington.csv
+* chicago.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
