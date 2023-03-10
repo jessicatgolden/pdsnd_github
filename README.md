@@ -16,5 +16,6 @@ Files include:
 * chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Bikeshare data provided by national provider: [Motivate](https://www.motivateco.com/).
+Original source code provided by: [Udacity](https://www.udacity.com/).
+Additional thanks owed to my fiance for providing the wine and chocolate which fueled this project.
