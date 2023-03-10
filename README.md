@@ -5,7 +5,7 @@ Include the date you created this project and README file.
 Replace the Project Title
 
 ### Interactive Bikeshare Tool
-Describe what your project is about and what it does
+This **Bikeshare** tool allows for users to review statistical time, location, and user data in the cities of: _New _York, _Washington, and _Chicago.
 
 ### Files used
 Include the files used
