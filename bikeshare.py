@@ -60,11 +60,13 @@ def load_data(city, month, day):
     df['Day'] = df['Start Time'].dt.day_name()  
 
     if day != 'All':    
-        df = df[df['Day'] == day]                                  
-        
+        df = df[df['Day'] == day]          
+
     if month != 'All':
         df = df[df['Month'] == month]
-    
+
+    df = df.dropna()
+   
     return df
 
 def time_stats(df):
