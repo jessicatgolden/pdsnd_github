@@ -1,17 +1,21 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
 Include the date you created this project and README file.
 
-### Project Title
+### 03-10-2023
 Replace the Project Title
 
-### Description
-Describe what your project is about and what it does
+### Interactive Bikeshare Tool
+This **Bikeshare** tool allows for users to review statistical time, location, and user data in the cities of: _New _York, _Washington, and _Chicago.
 
 ### Files used
-Include the files used
+Files include:
+* README.md
+* bikeshare.py
+* new_york_city.csv
+* washington.csv
+* chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Bikeshare data provided by national provider: [Motivate](https://www.motivateco.com/).
+Original source code provided by: [Udacity](https://www.udacity.com/).
+Additional thanks owed to my fiance for providing the wine and chocolate which fueled this project.
